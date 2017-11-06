@@ -1,9 +1,12 @@
 var month = 5;
 var year = 2017;
-var calndarDays = getCompliteDaySet(2017, 5, 42);
+var row_number=6//число строк
+var col_number=7//число столбцов
+var gap_number= row_number*col_number; //общее число ячеек
+/*Вызываем функцию генератора дней*/
+var calndarDays = getCompliteDaySet(year,month, gap_number);
 
 
-window.onload = function () {
 
 
     var mName = monthName(month);
@@ -11,7 +14,7 @@ window.onload = function () {
     /*устанавливает название месяца и года*/
     year_month(mName, year);
 
-    /*Вызываем функцию генератора дней*/
+
 
     /*Выводим в кансоль массив дней*/
     // showArray(calndarDays);
@@ -26,7 +29,7 @@ window.onload = function () {
     $('#prev').click(prevMonth);
 
 
-}
+
 
 /*предыдущая выбранная ячейка*/
 var prevgap = $('td');
@@ -40,15 +43,14 @@ function selectGap(evt) {
 
     var row = $(this).parent();
     var rowIndex = row.index();
-    console.log(" Индекс выбранной ячейки " + index + " Индекс выбранной строки " + rowIndex);
-
-    if (index == 0) index = 1;
-    if (rowIndex == 0) rowIndex = 1;
-
-    var gapIndex = (index) * (rowIndex) + (index);
+    //console.log(" Индекс выбранной ячейки " + index + " Индекс выбранной строки " + rowIndex);
 
 
-    console.log(" День:" + calndarDays[gapIndex].day+" Месяц:" +calndarDays[gapIndex].month+" Год:" +calndarDays[gapIndex].year);
+    var gapIndex = (index) +(rowIndex*col_number);
+
+/*Выводим на кансоль текущую дату */
+    console.log("Текущая дата:"+" День:" + (calndarDays[gapIndex].day+1)+" Месяц:" +(calndarDays[gapIndex].month+1)+" Год:" +calndarDays[gapIndex].year);
+    $("#currentdata").html("Текущая дата: "+ (calndarDays[gapIndex].day+1) +"."+(calndarDays[gapIndex].month+1)+"." +calndarDays[gapIndex].year);
 
 }
 
@@ -94,7 +96,7 @@ function year_month(mymonth, myyear) {
 
 /*Переходим на следующий месяц*/
 function nextMonth() {
-
+$('td').css('border', '#50359f 1px solid');//снимаем выделение ячейки
 
     if (month == 11) { /*проверяем если месяц декабрь, то переходим еще и на следующий год*/
 
@@ -104,20 +106,20 @@ function nextMonth() {
     else {
         month++;
     }
-   // console.log("Текщий месяц:"+month);
-   calndarDays = getCompliteDaySet(year, month, 42);
+
+   calndarDays = getCompliteDaySet(year, month, gap_number);
     fillGap(calndarDays);
     var mName = monthName(month);
     year_month(mName, year);
 
 
-   // showArray(newDays);
+
 
 }
 
 /*Переходим на предыдущий месяц*/
 function prevMonth() {
-
+    $('td').css('border', '#50359f 1px solid');//снимаем выделение ячейки
     if (month == 0) { /*проверяем если месяц январь, то переходим еще и на следующий год*/
 
         month = 11;
@@ -126,7 +128,7 @@ function prevMonth() {
     else {
         month--;
     }
-     calndarDays = getCompliteDaySet(year, month, 42);
+     calndarDays = getCompliteDaySet(year, month, gap_number);
     fillGap(calndarDays);
     var mName = monthName(month);
     year_month(mName, year);

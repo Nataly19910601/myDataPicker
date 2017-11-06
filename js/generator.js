@@ -1,6 +1,6 @@
 
 function getCompliteDaySet(year, month, fullCount) {
-    
+
     var days = [];
     var fullCount = fullCount;
 
@@ -21,7 +21,7 @@ function getPreMonth(year, month, dayOfWeek) {
     var end = 0;
     var mark = 1;
 
-    console.log("День недели " + dayOfWeek);
+   // console.log("День недели " + dayOfWeek);
 
     if (month <= 0) {
         year--;
@@ -174,7 +174,7 @@ function showArray(array) {
     }
 };
 
-var allDays = getCompliteDaySet(2017, 11, 42);
+//var allDays = getCompliteDaySet(2017, 11, 42);
 
-showArray(allDays);
+//showArray(allDays);
 

@@ -53,3 +53,8 @@ caption {
 #prev:hover{
     background-color: #906fd3;
 }
+#currentdata {
+    margin-top: 50px;
+    color: #ece4ff;
+    text-shadow: #26194c 1px 1px 1px;
+}
