@@ -1,4 +1,3 @@
-
 function getCompliteDaySet(year, month, fullCount) {
 
     var days = [];
@@ -12,6 +11,7 @@ function getCompliteDaySet(year, month, fullCount) {
 
     return days;
 };
+
 /*Получаем последние дни предыдущего месяца*/
 function getPreMonth(year, month, dayOfWeek) {
     var days = [];
@@ -21,7 +21,7 @@ function getPreMonth(year, month, dayOfWeek) {
     var end = 0;
     var mark = 1;
 
-   // console.log("День недели " + dayOfWeek);
+    // console.log("День недели " + dayOfWeek);
 
     if (month <= 0) {
         year--;
@@ -30,7 +30,7 @@ function getPreMonth(year, month, dayOfWeek) {
         month--;
     }
 
-    switch(dayOfWeek){
+    switch (dayOfWeek) {
         case 0:
             mark = 6;
             break;
@@ -60,8 +60,9 @@ function getPreMonth(year, month, dayOfWeek) {
     days = daysGenerator(year, month, begin, end)
     return days;
 };
+
 /*Получаем перые дни следующего месяца*/
-function getPostMonth (year, month, lenth) {
+function getPostMonth(year, month, lenth) {
     var days = [];
     var year = year;
     var month = month;
@@ -91,7 +92,7 @@ function daysGenerator(year, month, begin, end) {
 
     for (var i = start; i < stop; i++) {
         days.push(new DayOfYear(year, month, i, currentDayOfWeek))
-        if(currentDayOfWeek >= 6) {
+        if (currentDayOfWeek >= 6) {
             currentDayOfWeek = 0;
         } else {
             currentDayOfWeek++;
@@ -106,6 +107,7 @@ function DayOfYear(year, month, day, dayOfWeek) {
     this.day = day;
     this.dayOfWeek = dayOfWeek;
 };
+
 //проверяем высокосный ли год
 function getIsLeap(year) {
     if (year % 4 == 0) {
@@ -115,16 +117,17 @@ function getIsLeap(year) {
         return false;
     }
 };
+
 /*Число дней в месяце*/
 function getCountDayInMonth(month, isLeap) {
     var count = 30;
 
-    switch(month) {
+    switch (month) {
         case 0:
             count = 31;
             break;
         case 1:
-            count = isLeap ? 29:28;
+            count = isLeap ? 29 : 28;
             break;
         case 2:
             count = 31;
@@ -164,7 +167,7 @@ function getCountDayInMonth(month, isLeap) {
 function getFistDayOfWeek(year, month) {
     var days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
     var date = new Date(year, month, 1);
-   // console.log("День недели " + days[date.getDay()]);
+    // console.log("День недели " + days[date.getDay()]);
     return date.getDay();
 };
 

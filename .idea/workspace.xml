@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6df3194-b85e-443e-9e0d-04e0d78e360e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataPicker.html" afterPath="$PROJECT_DIR$/dataPicker.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/generator.js" afterPath="$PROJECT_DIR$/js/generator.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/myDataPicker.js" afterPath="$PROJECT_DIR$/js/myDataPicker.js" />
     </list>
@@ -53,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/js/generator.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="335">
-              <caret line="170" column="12" lean-forward="false" selection-start-line="170" selection-start-column="12" selection-end-line="170" selection-end-column="12" />
+              <caret line="173" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -62,8 +60,8 @@
       <file leaf-file-name="myDataPicker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/myDataPicker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state relative-caret-position="119">
+              <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -94,9 +92,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/generator.js" />
         <option value="$PROJECT_DIR$/dataPicker.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/js/generator.js" />
         <option value="$PROJECT_DIR$/js/myDataPicker.js" />
       </list>
     </option>
@@ -202,12 +200,12 @@
       <workItem from="1509865201953" duration="15941000" />
       <workItem from="1509886982960" duration="809000" />
       <workItem from="1509891968843" duration="2521000" />
-      <workItem from="1509938109923" duration="13671000" />
+      <workItem from="1509938109923" duration="14309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46187000" />
+    <option name="totallyTimeSpent" value="46825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -471,15 +469,15 @@
     <entry file="file://$PROJECT_DIR$/js/generator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
-          <caret line="170" column="12" lean-forward="false" selection-start-line="170" selection-start-column="12" selection-end-line="170" selection-end-column="12" />
+          <caret line="173" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/myDataPicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="119">
+          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding />
         </state>
       </provider>
