@@ -21,11 +21,12 @@ table {
     border: #50359f 1px solid;
     background-color: #ece4ff;
     color: white;
-    text-shadow: #50359f 1px 1px 1px;
+
 
 
 }
 th{
+    text-shadow: #26194c 1px 1px 1px;
     padding: 10px;
     border: #50359f 1px solid;
 }
@@ -38,4 +39,17 @@ caption {
 }
 .top_calend {
     background-color: #6a46d3;
+}
+
+#prev {
+   cursor: pointer;
+}
+#next{
+    cursor: pointer;
+}
+#next:hover{
+    background-color: #906fd3;
+}
+#prev:hover{
+    background-color: #906fd3;
 }

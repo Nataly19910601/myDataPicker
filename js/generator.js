@@ -1,5 +1,6 @@
 
 function getCompliteDaySet(year, month, fullCount) {
+    
     var days = [];
     var fullCount = fullCount;
 
